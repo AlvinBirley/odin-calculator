@@ -1,14 +1,29 @@
 //Select all number divs
-const numBtns = document.querySelectorAll('.num');
+const numDivs = document.querySelectorAll('.num');
+//Select data-value for num divs
+const numData = numDivs.dataset;
 //Select all operator divs
-const opBtns = document.querySelectorAll('.op');
+const opDivs = document.querySelectorAll('.op');
 //Select clear div
-const clearBtn = document.querySelector('.clear');
+const clearDiv = document.querySelector('.clear');
 //Select screen div 
-const screen = docuent.querySelector('.screen')
+const screen = document.querySelector('.screen')
 //Select equals div
 const equal = document.querySelector('equal')
 
+//Function to return the data-value of number divs when clicked
+function getNumValue(event){
+    const dataValue = event.currentTarget.dataset.value;
+    return dataValue
+}
+
+//Event listener that console logs the data-values of number divs 
+numDivs.forEach(num => {
+    num.addEventListener('click', (event) => {
+        const numVal = getNumValue(event);
+        console.log(numVal)
+    });
+});
 
 
 // variables
