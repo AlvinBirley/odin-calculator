@@ -1,3 +1,16 @@
+//Select all number divs
+const numBtns = document.querySelectorAll('.num');
+//Select all operator divs
+const opBtns = document.querySelectorAll('.op');
+//Select clear div
+const clearBtn = document.querySelector('.clear');
+//Select screen div 
+const screen = docuent.querySelector('.screen')
+//Select equals div
+const equal = document.querySelector('equal')
+
+
+
 // variables
 let a = 6
 let b = 11
