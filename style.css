@@ -47,13 +47,13 @@ body {
     width: 100%;
 }
 
-.btn {
+.num, .op, .equal {
     border: solid black 1px;
     height:100%;
     width: 25%;
 }
 
-.btn, .clear {
+.num, .op, .clear, .equal {
     display: flex;
     justify-content: center;
     align-items: center;
