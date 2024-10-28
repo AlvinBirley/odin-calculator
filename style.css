@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    /*background-color:rgb(7, 60, 205)*/
+}
+
+.container {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*border: solid black 2px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    height: 75%;
+    width: 30%;
+    /*border: solid, rgb(162, 9, 9), 1px;*/
+}
+
+.screen, .clear {
+    /*border: solid, black, 1px;*/
+    height:10%;
+    width: 100%;
+}
+
+.screen {
+    background-color: rgb(180, 180, 180);
+}
+
+.clear {
+    background-color: lightcoral;
+}
+
+.row-two, .row-three, .row-four, .row-five {
+    display: flex;
+    flex-direction: row;
+    /*border: solid black 1px;*/
+    height:20%;
+    width: 100%;
+}
+
+.btn {
+    border: solid black 1px;
+    height:100%;
+    width: 25%;
+}
+
+.btn, .clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
