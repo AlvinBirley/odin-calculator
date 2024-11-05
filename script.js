@@ -9,7 +9,9 @@ const clearDiv = document.querySelector('.clear');
 //Select screen div 
 const screen = document.querySelector('.screen')
 //Select equals div
-const equal = document.querySelector('equal')
+const equal = document.querySelector('.equal')
+
+let firstNum = ''
 
 //Function to return the data-value of number divs when clicked
 function getNumValue(event){
@@ -17,14 +19,22 @@ function getNumValue(event){
     return dataValue
 }
 
+
+
 //Event listener that console logs the data-values of number divs 
 numDivs.forEach(num => {
     num.addEventListener('click', (event) => {
         const numVal = getNumValue(event);
-        console.log(numVal)
+        firstNum += numVal
+        //console.log(numVal)
     });
 });
 
+//Return firstNum when equals button is clicked 
+equal.addEventListener('click', function() {
+    
+    console.log(firstNum);
+});
 
 // variables
 let a = 6
@@ -54,3 +64,7 @@ function operate(a,b,o){
 }
 
 console.log(operate(a,b,o))
+
+function fullNumber (fistNum) {
+console.log(firstNum)
+}
