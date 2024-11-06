@@ -10,8 +10,11 @@ const clearDiv = document.querySelector('.clear');
 const screen = document.querySelector('.screen')
 //Select equals div
 const equal = document.querySelector('.equal')
-
+//Variable for first component of the equation 
 let firstNum = ''
+//Variable for the operator of the equation 
+let operator = ''
+
 
 //Function to return the data-value of number divs when clicked
 function getNumValue(event){
@@ -26,15 +29,34 @@ numDivs.forEach(num => {
     num.addEventListener('click', (event) => {
         const numVal = getNumValue(event);
         firstNum += numVal
-        //console.log(numVal)
+        
     });
 });
 
-//Return firstNum when equals button is clicked 
-equal.addEventListener('click', function() {
-    
-    console.log(firstNum);
+//Event listener that splits the 
+opDivs.forEach(op => {
+    op.addEventListener('click', (event) => {
+        const opVal = getNumValue(event);
+        firstNum += "%"
+        operator+= opVal
+    });
 });
+
+
+
+
+
+
+function testing(){
+    console.log(firstNum)
+    console.log(operator)
+} 
+
+
+equal.addEventListener('click', testing)
+
+//WHAT I CAN TRY IS RETURNING THE FIRST COMPONENT AS THE RETURN EVENT OF A FUNCTION - ALSO, LOOK BACK AT THE RPS PROJECT
+//ANOTHER THING YOU COULD DO IS HAVE THE OPERATOR BUTTONS INSERT A SPACE OR A CERTAIN CHARACTER INTO YOUR VARIABLE - THEN YOU CAN SIMPLY SPLIT IT
 
 // variables
 let a = 6
