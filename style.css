@@ -47,13 +47,13 @@ body {
     width: 100%;
 }
 
-.num, .op, .equal {
+.num, .op, .equal, .point {
     border: solid black 1px;
     height:100%;
     width: 25%;
 }
 
-.num, .op, .clear, .equal {
+.num, .op, .clear, .equal, .point {
     display: flex;
     justify-content: center;
     align-items: center;
